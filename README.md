@@ -1,8 +1,8 @@
 # 🌸 Mae's Photo Watermarker
 
-A lightweight, browser-based tool that automatically stamps your daughter's age onto photos — no app installs, no uploads to any server, no cost.
+A lightweight, browser-based tool that automatically stamps your kid's age onto photos — no app installs, no uploads to any server, no cost.
 
-Drop in a photo taken when Mae was 3 months old and it comes out labelled **"Mae, 3 months old"** — automatically.
+Example: Drop in a photo taken when your kid was 3 months old and it comes out labelled **"{Kid name}, 3 months old"** — automatically.
 
 ---
 
