@@ -400,11 +400,18 @@
     return Math.max(0, months);
   }
 
-  function formatAge(months) {
-    if (months === 0) return 'newborn';
-    if (months === 1) return '1 month old';
-    return `${months} months old`;
-  }
+ function formatAge(months) {
+  if (months === 0) return 'newborn';
+  if (months < 12) return `${months} ${months === 1 ? 'month' : 'months'} old`;
+
+  const years = Math.floor(months / 12);
+  const remainingMonths = months % 12;
+
+  const yearPart = `${years} ${years === 1 ? 'year' : 'years'}`;
+  const monthPart = remainingMonths > 0 ? ` and ${remainingMonths} ${remainingMonths === 1 ? 'month' : 'months'}` : '';
+
+  return `${yearPart}${monthPart} old`;
+}
 
   function processFile(file) {
     const reader = new FileReader();
